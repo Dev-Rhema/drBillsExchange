@@ -359,6 +359,7 @@ function App() {
           <div className="max-lg:block hidden">
             <MobileDome />
           </div>
+          <p className="italic text-center text-xl text-blue-400">→ swipe →</p>
         </div>
       </section>
       <section
