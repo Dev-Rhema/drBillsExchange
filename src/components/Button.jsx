@@ -3,7 +3,7 @@ import apple from "../assets/images/apple.png";
 import playStore from "../assets/images/playStore.png";
 
 const sharedButtonStyles =
-  "inline-flex min-w-[180px] items-center justify-center gap-2 py-3 h-full px-8 font-semibold rounded-4xl shadow-[0_10px_30px_rgba(0,0,0,0.2)] max-lg:min-w-[160px] max-lg:px-6 max-lg:py-2 max-md:min-w-[150px] max-md:py-1 max-md:px-4 max-lg:font-medium max-md:text-sm";
+  "inline-flex min-w-[180px] items-center justify-center gap-2 py-3 h-full px-8 font-semibold rounded-4xl shadow-[0_10px_30px_rgba(0,0,0,0.2)] max-lg:min-w-[160px] max-lg:px-6 max-lg:py-2 max-md:min-w-[150px] max-md:py-2 max-md:px-4 max-lg:font-medium max-md:text-sm";
 
 export const Button = ({
   name,
@@ -26,11 +26,16 @@ export const Button = ({
   );
 
   if (href) {
+    const isExternalLink = /^https?:\/\//i.test(href);
+    const anchorTarget = target || (isExternalLink ? "_blank" : "_self");
+    const anchorRel =
+      rel || (isExternalLink ? "noopener noreferrer" : undefined);
+
     return (
       <a
         href={href}
-        target={target || "_blank"}
-        rel={rel || "noopener noreferrer"}
+        target={anchorTarget}
+        rel={anchorRel}
         className={buttonClasses}
         {...props}
       >

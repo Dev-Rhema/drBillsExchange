@@ -33,6 +33,7 @@ import DomeGallery from "./components/DomeGallery";
 import { MobileDome } from "./components/MobileDome";
 import { MainDome } from "./components/Dome";
 import Footer from "./components/Footer";
+import SplitText from "./components/SplitText";
 
 const FAQs = [
   {
@@ -196,8 +197,8 @@ function App() {
       >
         <div className="col-span-3 flex flex-col gap-10 max-xl:gap-6 max-lg:gap-4 text-[#1A315B]">
           <p className="">All in one payment app →</p>
-          <p className="text-8xl font-bold max-2xl:text-6xl max-lg:text-5xl max-md:text-3xl">
-            Manage Global Payments in One App
+          <p className="text-8xl font-bold max-2xl:text-6xl max-lg:text-5xl max-md:text-4xl">
+            <SplitText text="Manage Global Payments in One App" className="" />
           </p>
           <p className="text-md w-[60%] max-2xl:w-[80%] max-lg:text-sm">
             Manage NGN and USD wallets, trade crypto, create virtual dollar
@@ -366,7 +367,7 @@ function App() {
         id="ready-to-get-started"
         className="bg-[#1A315B] text-white py-16 md:py-24 scroll-mt-24"
       >
-        <div className="mx-auto  px-4 md:px-8">
+        <div className="mx-auto  px-4 md:px-8" id="#ready-to-get-started">
           <div className="flex flex-col justify-center gap-2 text-center">
             <h2 className=" font-semibold text-5xl max-lg:text-3xl max-md:text-2xl">
               Are You Ready to Get Started?
