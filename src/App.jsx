@@ -182,7 +182,9 @@ function App() {
         </div>
         <Button
           className={
-            navWhite ? "bg-[#1A315B] text-white" : "bg-[#1A315B] text-white"
+            navWhite
+              ? "bg-[#1A315B] text-white"
+              : "bg-[#1A315B] text-white px-4 py-2"
           }
           name="Download Now"
           href="#ready-to-get-started"

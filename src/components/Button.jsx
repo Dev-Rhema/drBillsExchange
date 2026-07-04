@@ -55,7 +55,7 @@ export const IPhoneButton = ({
   return (
     <Button
       name={name}
-      className={`bg-blue-400 text-white ${className}`}
+      className={`bg-blue-400 text-white ${className} px-4 py-2`}
       href={href}
       icon={apple}
       iconAlt="Apple logo"
@@ -73,7 +73,7 @@ export const AndroidButton = ({
   return (
     <Button
       name={name}
-      className={`border border-[#1A315B] bg-white text-[#1A315B] ${className}`}
+      className={`border border-[#1A315B] bg-white text-[#1A315B] ${className} px-4 py-2`}
       href={href}
       icon={playStore}
       iconAlt="Google Play logo"
