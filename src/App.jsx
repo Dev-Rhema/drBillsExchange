@@ -325,7 +325,7 @@ function App() {
       </section>
       <section
         id="faq"
-        className="bg-gray-100 text-[#1A315B] px-20 py-12 max-lg:py-4 flex flex-col items-center justify-between gap-6 max-md:px-4 scroll-mt-24"
+        className="bg-gray-100 text-[#1A315B] px-20 py-12 max-lg:py-10 flex flex-col items-center justify-between gap-6 max-md:px-4 scroll-mt-24"
       >
         <Heading title="FAQs" subtitle="Frequently Asked Questions" />
         <div className="flex max-md:flex-col justify-between gap-6">
@@ -337,7 +337,11 @@ function App() {
             className="w-[60%] max-md:w-full"
           >
             {FAQs.map((faq, index) => (
-              <AccordionItem key={faq.id} value={`item-${index + 1}`}>
+              <AccordionItem
+                key={faq.id}
+                value={`item-${index + 1}`}
+                className="my-1"
+              >
                 <AccordionTrigger className="font-bold">
                   {faq.question}
                 </AccordionTrigger>
@@ -353,6 +357,9 @@ function App() {
         className="bg-white text-[#1A315B] px-20  py-12 max-lg:py-8 flex flex-col items-center justify-between gap-6 max-md:px-4 scroll-mt-24"
       >
         <Heading title="We do it all!" />
+        <p className="italic text-center text-md opacity-50 text-blue-400">
+          → swipe on the globe →
+        </p>
         <div>
           <div className="max-lg:hidden">
             <MainDome />
@@ -360,7 +367,6 @@ function App() {
           <div className="max-lg:block hidden">
             <MobileDome />
           </div>
-          <p className="italic text-center text-xl text-blue-400">→ swipe →</p>
         </div>
       </section>
       <section
