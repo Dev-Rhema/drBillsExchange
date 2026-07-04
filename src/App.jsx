@@ -356,8 +356,10 @@ function App() {
         id="we-do-it-all"
         className="bg-white text-[#1A315B] px-20  py-12 max-lg:py-8 flex flex-col items-center justify-between gap-6 max-md:px-4 scroll-mt-24"
       >
-        <Heading title="We do it all!" />
-        <p className="italic text-center text-md opacity-50 text-blue-400">
+        <p className="text-5xl font-bold border-b-2 border-b-blue-500 max-md:text-2xl max-lg:text-3xl ">
+          We do it All
+        </p>
+        <p className="italic text-center text-md opacity-50 text-blue-700 animate-pulse">
           → swipe on the globe →
         </p>
         <div>
