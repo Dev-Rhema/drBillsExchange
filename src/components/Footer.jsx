@@ -107,9 +107,12 @@ const Footer = () => {
             Contact Us
           </h3>
 
-          <p className="text-gray-600 dark:text-gray-300">
+          <a
+            href="mailto:support@drbillsexchange.com"
+            className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-teal-400 transition-colors duration-300"
+          >
             support@drbillsexchange.com
-          </p>
+          </a>
         </div>
       </div>
     </footer>
