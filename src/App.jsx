@@ -243,7 +243,7 @@ function App() {
               </span>
             </p>
           </div>
-          <div className="grid grid-cols-2  gap-4 w-[60%] max-lg:w-full max-md:grid-cols-1 max-lg:gap-2">
+          <div className="grid grid-cols-2  gap-4 w-[60%] max-lg:w-full max-md:grid-cols-1">
             {Features.map((feature) => (
               <div className="bg-gray-100 flex gap-4 flex-col px-6 pt-4  rounded-2xl text-[#1A315B] max-lg:gap-2 shadow-md">
                 <p className="text-2xl font-semibold max-md:text-xl">
