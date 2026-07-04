@@ -238,7 +238,7 @@ function App() {
                   duration={2000}
                 >
                   Everything You Need in One App
-                  <RotatingText className="  font-serif text-5xl font-bold max-lg:text-3xl max-md:text-2xl text-[#1A315B]" />
+                  <RotatingText className="  font-serif text-5xl font-bold max-lg:text-3xl max-md:text-2xl text-[#1A315B] underline" />
                 </RotatingTextContainer>
               </span>
             </p>
@@ -281,10 +281,10 @@ function App() {
                     }
                   >
                     <div className="flex flex-col gap-4 max-md:gap-2">
-                      <p className="text-4xl max-lg:text-3xl max-md:text-sm font-semibold">
+                      <p className="text-4xl max-lg:text-3xl max-md:text-lg font-semibold">
                         {step.title}
                       </p>
-                      <p className="text-2xl max-lg:text-xl max-md:text-[12px]">
+                      <p className="text-2xl max-lg:text-xl max-md:text-sm">
                         {step.subtitle}
                       </p>
                     </div>

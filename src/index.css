@@ -7,7 +7,7 @@
 @custom-variant dark (&:is(.dark *));
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scroll-padding-top: 96px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -20,11 +20,11 @@ body {
 
 @media (prefers-reduced-motion: no-preference) {
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
   * {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 }
 
