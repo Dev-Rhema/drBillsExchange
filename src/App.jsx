@@ -281,7 +281,7 @@ function App() {
                     }
                   >
                     <div className="flex flex-col gap-4 max-md:gap-2">
-                      <p className="text-4xl max-lg:text-3xl max-md:text-lg font-semibold">
+                      <p className="text-4xl max-lg:text-3xl max-md:text-lg font-semibold underline">
                         {step.title}
                       </p>
                       <p className="text-2xl max-lg:text-xl max-md:text-sm">
